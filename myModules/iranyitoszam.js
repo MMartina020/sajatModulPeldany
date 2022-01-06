@@ -3,7 +3,7 @@ module.exports.irszTeszt = function(irsz){
         console.log("Az adott irányítószám nem Budapesthez tartozik");
         return;
     }
-    const kerulet = irsz.substr(1,3);
+    const kerulet = (irsz+"").substring(1,3);
     if( kerulet < 24){
         console.log('A budapesti irányítószám a ${kerulet}-ben található');
     }else{
